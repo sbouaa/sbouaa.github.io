@@ -1,0 +1,154 @@
+/* Style copied from ne02ptzero.me (main.css) */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    background: #101010;
+    color: #999;
+    line-height: 1.3rem;
+}
+
+code {
+    white-space: pre;
+}
+
+img {
+    width: 100%;
+}
+
+pre code {
+    width: 100%;
+    overflow-x: auto;
+    font-weight: 100;
+    color: #689d6a;
+    line-height: 20px;
+}
+
+pre code::after, pre code::before {
+    content: none;
+}
+
+pre {
+    background: #0000001a;
+    padding: 5px;
+}
+
+a {
+    color: #b5e853;
+    text-decoration: none;
+    border-bottom: 1px solid #b5e853;
+}
+
+a:hover {
+    background: #b5e853;
+    color: #999;
+}
+
+em, h1, h2, h3, h4, h5, h6, strong {
+    font-size: 1em;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #98971a;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    display: table-cell;
+    padding: 10px 0 20px;
+    margin: 0;
+}
+
+h1::after {
+    content: "===========================================================================";
+    position: absolute;
+    left: 0;
+    display: block;
+}
+
+h2::before, h3::before, h4::before, h5::before, h6::before {
+    display: inline;
+}
+
+h2::before { content: "## "; }
+h3::before { content: "### "; }
+h4::before { content: "#### "; }
+h5::before { content: "##### "; }
+h6::before { content: "###### "; }
+
+code::after, code::before {
+    content: "`";
+    display: inline;
+}
+
+code {
+    color: #98971a;
+}
+
+blockquote::after {
+    content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 17px;
+}
+
+blockquote {
+    position: relative;
+    padding-left: 20px;
+    overflow: hidden;
+    margin: 0;
+    color: #999999b3;
+    line-height: 17px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li::after {
+    content: "-";
+}
+
+li::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table .left {
+    width: 33%;
+    vertical-align: baseline;
+}
+
+table .right {
+    width: 77%;
+}
+
+h1 { max-width: 100%; overflow: hidden; }
+@media (max-width: 600px) {
+    table, table tbody, table tr, table td { display: block; width: 100%; }
+    table .left { width: 50%; }
+    table .right { width: 100%; }
+}
+h1, h2, h3, h4, h5, h6, b { font-weight: normal; }
